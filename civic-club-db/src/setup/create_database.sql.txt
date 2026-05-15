@@ -1,0 +1,7 @@
+IF DB_ID(N'CivicCenterDB') IS NULL
+BEGIN
+    CREATE DATABASE CivicCenterDB;
+END
+GO
+USE CivicCenterDB;
+GO

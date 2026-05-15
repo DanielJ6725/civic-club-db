@@ -1,0 +1,24 @@
+ALTER TABLE dbo.Members
+ADD CreatedDate DATETIME DEFAULT GETDATE(),
+    ModifiedDate DATETIME NULL;
+
+ALTER TABLE dbo.MembershipTypes
+ADD CreatedDate DATETIME DEFAULT GETDATE(),
+    ModifiedDate DATETIME NULL;
+
+ALTER TABLE dbo.Memberships
+ADD CreatedDate DATETIME DEFAULT GETDATE(),
+    ModifiedDate DATETIME NULL;
+
+ALTER TABLE dbo.Payments
+ADD CreatedDate DATETIME DEFAULT GETDATE(),
+    ModifiedDate DATETIME NULL;
+
+ALTER TABLE dbo.Events
+ADD CreatedDate DATETIME DEFAULT GETDATE(),
+    ModifiedDate DATETIME NULL;
+
+ALTER TABLE dbo.EventRegistrations
+ADD CreatedDate DATETIME DEFAULT GETDATE(),
+    ModifiedDate DATETIME NULL;
+GO
